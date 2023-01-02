@@ -5,7 +5,8 @@ let song = document.querySelector('audio');
 let play = document.querySelector('.fa-play');
 let pause = document.querySelector('.fa-pause');
 
-song.duration = 0;
+let start = true;
+
 
 button.addEventListener('click', () => {
     if(song.paused) {
@@ -20,3 +21,14 @@ button.addEventListener('click', () => {
     }
 
 });
+
+window.addEventListener('load', () => {
+    song.pause();
+    song.currentTime = 0;
+})
+
+
+window.addEventListener('unload', () => {
+    song.pause();
+    song.currentTime = 0;
+})
