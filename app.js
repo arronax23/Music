@@ -20,10 +20,9 @@ button.addEventListener('click', () => {
 });
 
 window.addEventListener('load', () => {
-    button.disabled = true;
     song.pause();
     song.currentTime = 0;
-    button.disabled = true;
+    button.disabled = false;
 })
 
 
