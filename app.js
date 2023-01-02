@@ -5,9 +5,6 @@ let song = document.querySelector('audio');
 let play = document.querySelector('.fa-play');
 let pause = document.querySelector('.fa-pause');
 
-let start = true;
-
-
 button.addEventListener('click', () => {
     if(song.paused) {
         song.play();
