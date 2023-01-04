@@ -16,17 +16,4 @@ button.addEventListener('click', () => {
         play.style.display = 'inline';
         pause.style.display = 'none';
     }
-
 });
-
-window.addEventListener('load', () => {
-    song.pause();
-    song.currentTime = 0;
-    button.disabled = false;
-})
-
-
-window.addEventListener('unload', () => {
-    song.pause();
-    song.currentTime = 0;
-})
