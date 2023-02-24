@@ -20,6 +20,7 @@ button{
     border-radius: 25%;
     font-size: 4rem;
     opacity: .65;
+    transition: all .25s;
 }
 
 button:hover {
